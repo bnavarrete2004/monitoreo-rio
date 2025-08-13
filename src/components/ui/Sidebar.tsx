@@ -4,7 +4,7 @@ import { Home, FileText, Radio, Grid3X3 } from "lucide-react";
 export default function Sidebar() {
   return (
     <aside className="w-20 bg-[#630dc6] flex flex-col items-center py-6 gap-6">
-      <button className="w-12 h-12 bg-[#3f0087] rounded-lg flex items-center justify-center text-white">
+      <button className="w-12 h-12  rounded-lg flex items-center justify-center text-white hover:bg-[#3f0087]">
         <Home size={20} />
       </button>
       <button className="w-12 h-12 rounded-lg flex items-center justify-center text-white hover:bg-[#3f0087]">

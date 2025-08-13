@@ -6,11 +6,20 @@ interface Report {
   tipo: string;
 }
 
-interface Props {
-  reports: Report[];
-}
+export default function ReportsTable() {
+  // Datos de ejemplo para PMV
+  const reports: Report[] = [
+    { fecha: "04/07/2025 04:02 PM", titulo: "Monitoreo diario del Río Claro", tipo: "RCNR" },
+    { fecha: "04/07/2025 04:01 PM", titulo: "Informe semanal de nivel y riesgo hídrico", tipo: "RCNR" },
+    { fecha: "19/06/2025 06:13 PM", titulo: "Resumen mensual de actividad hidrológica", tipo: "RCNR" },
+    { fecha: "06/06/2025 05:10 PM", titulo: "Evaluación post-lluvia torrencial", tipo: "RCNR" },
+    { fecha: "06/06/2025 05:10 PM", titulo: "Evaluación post-lluvia torrencial", tipo: "RCNR" },
+    { fecha: "06/06/2025 05:10 PM", titulo: "Evaluación post-lluvia torrencial", tipo: "RCNR" },
+    { fecha: "06/06/2025 05:10 PM", titulo: "Evaluación post-lluvia torrencial", tipo: "RCNR" },
 
-export default function ReportsTable({ reports }: Props) {
+
+  ];
+
   return (
     <div className="overflow-hidden rounded-lg">
       <table className="w-full">
