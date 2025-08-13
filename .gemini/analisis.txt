@@ -1,0 +1,47 @@
+Análisis del Proyecto: monitoreo-rio
+
+## Resumen General
+
+El proyecto `monitoreo-rio` es una aplicación web frontend construida con React, Vite y TypeScript. La estructura del proyecto y las dependencias sugieren que se trata de un panel de control (dashboard) para visualizar y gestionar informes de actividad.
+
+## Tecnologías Principales
+
+- **Framework Frontend:** React 19
+- **Empaquetador (Bundler):** Vite
+- **Lenguaje:** TypeScript
+- **Estilos:** Tailwind CSS
+
+## Estructura del Proyecto
+
+- `src/`: Contiene todo el código fuente de la aplicación.
+  - `main.tsx`: Punto de entrada de la aplicación.
+  - `App.tsx`: Componente raíz de React.
+  - `components/ui/`: Alberga componentes de interfaz de usuario reutilizables, lo que indica un enfoque en un diseño modular y consistente.
+    - `ActivityReportDashboard.tsx`: Componente principal del panel de control.
+    - `ReportsTable.tsx`: Componente para mostrar informes en una tabla.
+    - `Sidebar.tsx`, `Header.tsx`: Componentes de layout principales.
+    - `Controls.tsx`, `Pagination.tsx`: Componentes para la interacción del usuario con la tabla de informes.
+    - `card.tsx`, `input.tsx`: Componentes de UI genéricos.
+  - `lib/`: Contiene utilidades, como `utils.ts` para funciones auxiliares.
+- `public/`: Almacena activos estáticos.
+- `package.json`: Define los scripts, dependencias y metadatos del proyecto.
+- `vite.config.ts`: Archivo de configuración para Vite.
+- `tsconfig.json`: Archivo de configuración para TypeScript.
+
+## Dependencias Clave
+
+- `react`, `react-dom`: Biblioteca principal para construir la interfaz de usuario.
+- `tailwindcss`, `clsx`, `tailwind-merge`: Utilidades para la implementación de estilos con Tailwind CSS.
+- `lucide-react`: Paquete de iconos.
+- `class-variance-authority`: Ayuda a crear componentes de UI con variantes de estilo.
+
+## Scripts Disponibles
+
+- `npm run dev`: Inicia el servidor de desarrollo.
+- `npm run build`: Compila la aplicación para producción.
+- `npm run lint`: Ejecuta el linter (ESLint) para analizar el código en busca de errores y problemas de estilo.
+- `npm run preview`: Sirve la compilación de producción localmente.
+
+## Propósito Deducido
+
+La combinación de componentes como `ActivityReportDashboard`, `ReportsTable` y `Pagination` sugiere fuertemente que la aplicación es un panel de control diseñado para monitorear y gestionar "informes de actividad". La interfaz probablemente permite a los usuarios ver, filtrar y navegar a través de una lista de informes.
