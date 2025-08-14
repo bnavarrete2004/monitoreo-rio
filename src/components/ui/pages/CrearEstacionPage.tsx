@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "../Header";
 import Sidebar from "../Sidebar";
-import CrearUsuarioForm from "../CrearUsuarioForm";
+import CrearEstacionForm from "../CrearEstacionForm";
 
-export default function CrearUsuarioPage() {
+export default function CrearEstacionPage() {
   return (
     <div className="min-h-screen" style={{ backgroundColor: "#cbdbdb" }}>
       <div className="max-w-7xl mx-auto p-6">
@@ -12,7 +12,7 @@ export default function CrearUsuarioPage() {
           <div className="flex flex-1">
             <Sidebar />
             <main className="flex-1 p-8">
-              <CrearUsuarioForm />
+              <CrearEstacionForm />
             </main>
           </div>
         </div>
