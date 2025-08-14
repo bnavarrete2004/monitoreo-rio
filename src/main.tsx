@@ -5,9 +5,11 @@ import ActivityReportDashboard from './components/ui/pages/ActivityReportDashboa
 import HomePage from './components/ui/pages/HomePage.tsx'
 import CrearUsuarioPage from './components/ui/pages/CrearUsuarioPage.tsx'
 import CrearEstacionPage from './components/ui/pages/CrearEstacionPage.tsx'
+import CrearVariablePage from './components/ui/pages/CrearVariablePage.tsx'
+
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <CrearEstacionPage />
+    <CrearVariablePage />
   </StrictMode>,
 )
