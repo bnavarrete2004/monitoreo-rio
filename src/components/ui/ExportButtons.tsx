@@ -1,8 +1,8 @@
-import React from "react";
+// src/components/ExportButtons.tsx
 import { Button } from "@/components/ui/button";
 import { Copy, FileSpreadsheet, FileText, Download } from "lucide-react";
 
-export default function ExportButtons() {
+const ExportButtons = () => {
   return (
     <div className="flex gap-2 mb-6">
       <Button variant="outline" className="bg-[#8b9b9b] text-white border-none hover:bg-[#808080]">
@@ -23,4 +23,6 @@ export default function ExportButtons() {
       </Button>
     </div>
   );
-}
+};
+
+export default ExportButtons;

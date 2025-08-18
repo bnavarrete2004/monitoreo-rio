@@ -7,9 +7,10 @@ import CrearUsuarioPage from './components/ui/pages/CrearUsuarioPage.tsx'
 import CrearEstacionPage from './components/ui/pages/CrearEstacionPage.tsx'
 import CrearVariablePage from './components/ui/pages/CrearVariablePage.tsx'
 import UserTablePage from './components/ui/pages/UserTablePage.tsx'
+import EstacionTablePage from './components/ui/pages/EstacionTablePage.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <UserTablePage />
+    <EstacionTablePage />
   </StrictMode>,
 )
