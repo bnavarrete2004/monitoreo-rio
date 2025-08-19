@@ -8,3 +8,12 @@ export interface User {
   rol: string;
   status: "activo" | "inactivo";
 }
+export interface Estacion {
+  id: number;
+  nombre: string;
+  modelo: string;
+  longitud: number;
+  latitud: number;
+  responsable: string;
+  status: "activo" | "inactivo";
+}
