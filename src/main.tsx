@@ -9,9 +9,11 @@ import CrearVariablePage from './components/ui/pages/CrearVariablePage.tsx'
 import UserTablePage from './components/ui/pages/UserTablePage.tsx'
 import EstacionTablePage from './components/ui/pages/EstacionTablePage.tsx'
 import VariableTablePage from './components/ui/pages/VariableTablePage.tsx'
+import LoginPage from './components/ui/pages/login.tsx'
+import MonitoringDashboard from './components/ui/pages/MonitoringDashboard.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <VariableTablePage />
+    <MonitoringDashboard />
   </StrictMode>,
 )
