@@ -24,7 +24,7 @@ const TablaEstacion = () => {
       longitud: "--",
       latitud: "--",
       responsable: "--",
-      status: "--", 
+      status: "inactivo", 
     },
   ];
 

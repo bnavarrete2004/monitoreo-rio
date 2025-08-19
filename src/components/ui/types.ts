@@ -17,3 +17,12 @@ export interface Estacion {
   responsable: string;
   status: "activo" | "inactivo";
 }
+export interface Variable {
+  id: number;
+  unidad: string;
+  tipo: string;
+  rango: string;
+  umbrales_alerta: string;
+  estacion: string;
+  status: "activo" | "inactivo";
+}
