@@ -11,9 +11,10 @@ import EstacionTablePage from './components/ui/pages/EstacionTablePage.tsx'
 import VariableTablePage from './components/ui/pages/VariableTablePage.tsx'
 import LoginPage from './components/ui/pages/login.tsx'
 import MonitoringDashboard from './components/ui/pages/MonitoringDashboard.tsx'
+import StationDashboard from './components/ui/pages/StationDashboard.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <MonitoringDashboard />
+    <StationDashboard />
   </StrictMode>,
 )
