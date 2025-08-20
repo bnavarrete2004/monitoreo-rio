@@ -4,10 +4,19 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { EmailField } from './EmailField';
 import { PasswordField } from './PasswordField';
+import { useNavigate } from "react-router-dom";
 
 export function LoginForm() {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Aquí podrías agregar lógica de validación o autenticación si la necesitas
+    navigate("/home"); // Redirige a HomePage
+  };
+
   return (
-    <form className="space-y-6">
+    <form className="space-y-6" onSubmit={handleSubmit}>
       <EmailField />
       <PasswordField />
 

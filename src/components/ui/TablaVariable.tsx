@@ -12,16 +12,24 @@ const TablaVariable = () => {
   const variables: Variable[] = [
     {
       id: 1,
-      nombre: "Caudal",
+      variable: "Caudal",
       unidad: "m³/s",
       descripcion: "Medición de caudal en el río",
+      estacion:"Sensor 1",
+      rango:"0-5",
+      tipo: "numerica",
+      umbrales_alerta: "1.5 - 2",
       status: "activo",
     },
     {
       id: 2,
-      nombre: "--",
-      unidad: "--",
-      descripcion: "--",
+      variable: "Caudal",
+      unidad: "m³/s",
+      descripcion: "Medición de caudal en el río",
+      estacion:"Sensor 2",
+      rango:"0-6",
+      tipo: "numerica",
+      umbrales_alerta: "1.5 - 2",
       status: "inactivo",
     },
   ];

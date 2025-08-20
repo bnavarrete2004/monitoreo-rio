@@ -21,7 +21,11 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        {/* Login como página por defecto */}
+        <Route path="/" element={<LoginPage />} />
+
+        {/* Resto de rutas */}
+        <Route path="/home" element={<HomePage />} />
         <Route path="/activity-report" element={<ActivityReportDashboard />} />
         <Route path="/monitoring" element={<MonitoringDashboard />} />
         <Route path="/station-dashboard" element={<StationDashboard />} />
