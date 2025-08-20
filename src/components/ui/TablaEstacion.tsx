@@ -1,12 +1,15 @@
-// src/components/MainContent.tsx
+// src/components/MainContent.tsx (ahora TablaEstacion)
+import { useNavigate } from "react-router-dom";
 import TopNav from "./TopNav";
 import PageHeader from "./PageHeader";
 import ExportButtons from "./ExportButtons";
 import EstacionesTable from "./EstacionesTable";
-import type {Estacion} from "@/types";
+import type { Estacion } from "@/types";
 import Pagination from "./Pagination";
 
 const TablaEstacion = () => {
+  const navigate = useNavigate(); // 👈 hook para redirigir
+
   const estaciones: Estacion[] = [
     {
       id: 1,
@@ -15,29 +18,33 @@ const TablaEstacion = () => {
       longitud: "1.77° E",
       latitud: "23.63° S",
       responsable: "Eduardo Mardones",
-      status: "activo", 
+      status: "activo",
     },
-        {
+    {
       id: 2,
       nombre: "--",
       modelo: "--",
       longitud: "--",
       latitud: "--",
       responsable: "--",
-      status: "inactivo", 
+      status: "inactivo",
     },
   ];
 
   return (
     <main className="flex-1 bg-white rounded-l-3xl">
       <div className="p-6">
-        <PageHeader title="Estación" buttonText="Nuevo" />
+        <PageHeader
+          title="Estación"
+          buttonText="Nuevo"
+          onButtonClick={() => navigate("/crear-estacion")} // 👈 redirige
+        />
         <ExportButtons />
         <EstacionesTable estaciones={estaciones} />
-        <Pagination></Pagination>
+        <Pagination />
       </div>
     </main>
   );
-}
+};
 
 export default TablaEstacion;

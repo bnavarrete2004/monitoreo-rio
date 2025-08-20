@@ -1,10 +1,10 @@
-// src/pages/MonitoringDashboard.tsx
-import React from 'react';
+import React from "react";
 import Header from "../Header";
 import Sidebar from "../Sidebar";
-import { MapDisplay } from '@/components/ui/MapDisplay';
+import MainContent from "../MainContent";
+import Perfil from "../Perfil";
 
-export default function MonitoringDashboard() {
+export default function PerfilUsuarioPage() {
   return (
     <div className="min-h-screen" style={{ backgroundColor: "#cbdbdb" }}>
       <div className="max-w-7xl mx-auto p-6">
@@ -13,7 +13,7 @@ export default function MonitoringDashboard() {
           <div className="flex">
             <Sidebar />
             <main className="flex-1 p-8">
-              <MapDisplay />
+                <Perfil></Perfil>
             </main>
           </div>
         </div>
@@ -21,3 +21,4 @@ export default function MonitoringDashboard() {
     </div>
   );
 }
+

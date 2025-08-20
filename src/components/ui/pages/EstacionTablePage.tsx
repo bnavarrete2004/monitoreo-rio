@@ -1,10 +1,6 @@
 import React from "react";
 import Header from "../Header";
 import Sidebar from "../Sidebar";
-import Controls from "../Controls";
-import ReportsTable from "../ReportsTable";
-import Pagination from "../Pagination";
-import MainContent from "../MainContent";
 import TablaEstacion from "../TablaEstacion";
 
 

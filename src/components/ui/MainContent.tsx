@@ -1,4 +1,5 @@
 // src/components/MainContent.tsx
+import { useNavigate } from "react-router-dom";
 import TopNav from "./TopNav";
 import PageHeader from "./PageHeader";
 import ExportButtons from "./ExportButtons";
@@ -7,6 +8,8 @@ import type { User } from "@/types";
 import Pagination from "./Pagination";
 
 const MainContent = () => {
+  const navigate = useNavigate();
+
   const users: User[] = [
     {
       id: 1,
@@ -26,19 +29,22 @@ const MainContent = () => {
       rol: "--",
       status: "inactivo",
     },
-    // ... más usuarios
   ];
 
   return (
     <main className="flex-1 bg-white rounded-l-3xl">
       <div className="p-6">
-        <PageHeader title="Usuarios" buttonText="Nuevo" />
+        <PageHeader
+          title="Usuarios"
+          buttonText="Nuevo"
+          onButtonClick={() => navigate("/crear-usuario")} // 👈 Aquí la redirección
+        />
         <ExportButtons />
         <UsersTable users={users} />
-        <Pagination></Pagination>
+        <Pagination />
       </div>
     </main>
   );
-}
+};
 
 export default MainContent;
