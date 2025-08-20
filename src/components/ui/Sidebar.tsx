@@ -1,5 +1,5 @@
 import React from "react";
-import { Home, FileText, Radio, Grid3X3 } from "lucide-react";
+import { Home, FileText, Radio, Grid2X2, User, Router, Route} from "lucide-react";
 
 export default function Sidebar() {
   return (
@@ -14,7 +14,16 @@ export default function Sidebar() {
         <Radio size={20} />
       </button>
       <button className="w-12 h-12 rounded-lg flex items-center justify-center text-white hover:bg-[#3f0087]">
-        <Grid3X3 size={20} />
+        <Grid2X2 size={20} />
+      </button>
+      <button className="w-12 h-12 rounded-lg flex items-center justify-center text-white hover:bg-[#3f0087]">
+        <User size={20} />
+      </button>
+      <button className="w-12 h-12 rounded-lg flex items-center justify-center text-white hover:bg-[#3f0087]">
+        <Router size={20} />
+      </button>
+      <button className="w-12 h-12 rounded-lg flex items-center justify-center text-white hover:bg-[#3f0087]">
+        <Route size={20} />
       </button>
     </aside>
   );
