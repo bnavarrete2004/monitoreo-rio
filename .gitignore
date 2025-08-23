@@ -22,3 +22,19 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# Python
+# Ignorar el entorno virtual
+env/
+.venv/
+venv/
+
+# Ignorar archivos de cache de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos locales/personales (si aplica)
+.gemini/
